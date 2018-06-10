@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageProjectUrl>https://github.com/njunior1980/RavenDBDependencyInjection.AspNetCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/njunior1980/RavenDBDependencyInjection.AspNetCore</RepositoryUrl>
+    <Description>RavenDB Dependency Injection for ASP Net Core 2.x</Description>
+    <PackageTags>aspnetcore, ravendb</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

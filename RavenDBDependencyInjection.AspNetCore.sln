@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenDBDependencyInjection.AspNetCore", "RavenDBDependencyInjection.AspNetCore\RavenDBDependencyInjection.AspNetCore.csproj", "{0D6CA307-11AC-4502-BEA1-BDA14A8374D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D6CA307-11AC-4502-BEA1-BDA14A8374D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6CA307-11AC-4502-BEA1-BDA14A8374D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6CA307-11AC-4502-BEA1-BDA14A8374D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6CA307-11AC-4502-BEA1-BDA14A8374D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A96A991B-3D21-4790-B290-19EDE2868579}
+	EndGlobalSection
+EndGlobal

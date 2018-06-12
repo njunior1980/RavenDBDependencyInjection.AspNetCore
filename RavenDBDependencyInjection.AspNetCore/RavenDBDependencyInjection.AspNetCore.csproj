@@ -7,12 +7,13 @@
     <PackageId>RavenDBDependencyInjection.AspNetCore</PackageId>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageReleaseNotes>RavenDB Dependency Injection for ASP .NET Core 2.x</PackageReleaseNotes>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <Company>RavenDBDependencyInjection.AspNetCore</Company>
     <Authors>RavenDBDependencyInjection.AspNetCore</Authors>
     <PackageProjectUrl>https://github.com/njunior1980/RavenDBDependencyInjection.AspNetCore</PackageProjectUrl>
     <Copyright>2018</Copyright>
+    <PackageTags>aspnetcore, ravendb</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

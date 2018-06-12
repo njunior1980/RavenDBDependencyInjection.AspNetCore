@@ -14,10 +14,6 @@ namespace RavenDBDependencyInjection.AspNetCore
 	    public RavenConfig()
 	    {
 		    this.Urls = this.Urls ?? new[] {"http://localhost:8080"};
-		    this.Database = Database;
-		    this.Identifier = Identifier;
-		    this.Conventions = Conventions;
-		    this.Certificate = Certificate;
 	    }
 	}
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Reflection;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,16 +19,29 @@ namespace RavenDBDependencyInjection.DemoApi
 
         public IConfiguration Configuration { get; }
 
-	    private void ConfigureRavenDb(IServiceCollection services)
+	    private static void ConfigureRavenDb(IServiceCollection services)
 	    {
-			// first create your database here: http://live-test.ravendb.net
+			// create your database here: http://live-test.ravendb.net
+
+
+		    // assembly that contains the index objects
+		    // example: the main project (RavenDBDependencyInjection.DemoApi)
+		    var assemblyLocal = Assembly.GetExecutingAssembly();
 
 			services.AddRavenDbAsync(p =>
 		    {
 			    p.Urls = new[] { "http://localhost:8080" };
 			    p.Database = "demo"; 
-			});
-		}
+			}, assemblyLocal);
+
+			// manually register the indices
+			//var store = services.BuildServiceProvider().GetService<IDocumentStore>();
+
+			// assembly that contains the index objects
+			// example: the main project (RavenDBDependencyInjection.DemoApi)
+			//var assemblyLocal = Assembly.GetExecutingAssembly();
+			//await store.RegisterIndexesAsync(assemblyLocal);
+	    }
 
         public void ConfigureServices(IServiceCollection services)
         {

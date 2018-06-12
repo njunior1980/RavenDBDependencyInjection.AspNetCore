@@ -52,22 +52,6 @@ namespace RavenDBDependencyInjection.DemoApi.Controllers
 		    }
 	    }
 
-	    // This will create a new index in current database connected
-		[HttpPost("create-indexes")]
-		public async Task<IActionResult> CreateIndexes()
-	    {
-		    try
-		    {
-			    var assembly = Assembly.GetExecutingAssembly();
-			    await _store.RegisterIndexesAsync(assembly);
-			    return Ok("Indexes created!");
-		    }
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
-		}
-
 	    // This will register a new product in current database connected
 		[HttpPost("register-product")]
 	    public async Task<IActionResult> RegisterProduct([FromBody] Product product)

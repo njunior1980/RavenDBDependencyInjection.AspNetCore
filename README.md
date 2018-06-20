@@ -41,7 +41,7 @@ public DemoController(IDocumentSession session)
 - Urls (if url is null then by default it will be "http://localhost:8080")
 - Database name
 - Certificate (X509Certificate2)
-- Conventions (for default is new Conventions())
+- Conventions (for default is null)
 - Identifier
 
 **EXTRAS**

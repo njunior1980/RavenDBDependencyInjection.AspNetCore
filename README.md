@@ -5,14 +5,14 @@
 ```c#
 public void ConfigureServices(IServiceCollection services)
 {
-    // for sync module IDocumentSession 
+    // for sync module (IDocumentSession)
     services.AddRavenDb(p =>
     {
         p.Urls = new[] { "http://localhost:8080" };
         p.Database = "your_database";
     });
     
-    // for async module IAsyncDocumentSession 
+    // for async module (IAsyncDocumentSession )
     services.AddRavenDbAsync(p =>
     {
         p.Urls = new[] { "http://localhost:8080" };
